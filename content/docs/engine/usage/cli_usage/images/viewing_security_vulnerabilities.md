@@ -15,8 +15,8 @@ The `INPUT_IMAGE` can be specified in one of the following formats:
 
 The `VULN_TYPE` currently supports:
 
-- os: Operating System Package CVEs
-- non-os: NPM, GEM, Java Archive (jar, war, ear) and Python PIP CVEs.
+- os: Vulnerabilities against operating system packages (RPM, DPKG, APK, etc.)
+- non-os: Vulnerabilities against language packages (NPM, GEM, Java Archive (jar, war, ear), Python PIP, Dotnet Nuget, etc.).
 - all: Combination report containing both 'os' and 'non-os' vulnerability records. 
 
 The system has been designed to incorporate 3rd party feeds for other vulnerabilites.
@@ -39,7 +39,7 @@ Currently the following the anchore-engine draws vulnerability data specifically
 - Amazon Linux 2
 - Google Distroless
 
-To generate a report of language package (NPM/GEM/Java/Python) vulnerabilities, the system draws vulnerability data from the NVD data feed, and vulnerability reports can be viewed using the 'non-os' vulnerability type:
+To generate a report of language package (NPM/GEM/Java/Python/Nuget) vulnerabilities, the system draws vulnerability data from the NVD data feed, and vulnerability reports can be viewed using the 'non-os' vulnerability type:
 
 `anchore-cli image vuln node:latest non-os`
 
