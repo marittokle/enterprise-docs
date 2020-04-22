@@ -16,8 +16,8 @@ The `INPUT_IMAGE` can be specified in one of the following formats:
 The `VULN_TYPE` currently supports:
 
 - os: Vulnerabilities against operating system packages (RPM, DPKG, APK, etc.)
-- non-os: Vulnerabilities against language packages (NPM, GEM, Java Archive (jar, war, ear), Python PIP, Dotnet Nuget, etc.).
-- all: Combination report containing both 'os' and 'non-os' vulnerability records. 
+- non-os: NPM, GEM, .NET (NuGet), Java Archive (jar, war, ear) and Python PIP CVEs.
+- all: Combination report containing both 'os' and 'non-os' vulnerability records.
 
 The system has been designed to incorporate 3rd party feeds for other vulnerabilites.
 
